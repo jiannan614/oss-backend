@@ -14,7 +14,7 @@
 | [`gacha-sim-weapon-pity`](gacha-sim-weapon-pity/) | 恒定概率 + 循环保底 + 里程碑赠送 | 8506 | + NumPy |
 | [`gacha-sim-soft-pity`](gacha-sim-soft-pity/) | 软保底逐抽加息 + 双 UP 分摊 + 满额赠送 | 8507 | + NumPy |
 | [`gacha-sim-stage-pity`](gacha-sim-stage-pity/) | 三段式软保底 + 歪了下次必中 | 8508 | + NumPy |
-| [`gacha-budget-mc`](gacha-budget-mc/) | 资源折算 + 整批蒙特卡洛 + 抽卡副产物 | 8510 | 仅标准库 + Flask |
+| [`gacha-budget-mc`](gacha-budget/) | 资源折算 + 整批蒙特卡洛 + 抽卡副产物 | 8510 | 仅标准库 + Flask |
 
 ## 共同约定
 
@@ -74,7 +74,7 @@ curl -s -X POST http://127.0.0.1:8506/api/v1/sim/char/draw \
 
 ```
 gacha-planner          独立：纯标准库，连 NumPy 都不需要
-gacha-budget-mc        独立：纯标准库 + Flask（逐抽模拟，不用矩阵引擎）
+gacha-budget        独立：纯标准库 + Flask（逐抽模拟，不用矩阵引擎）
 gacha-sim-char-pity    api.py ── core.py ── mc_matrix.py
 gacha-sim-weapon-pity  api.py ── core.py ── mc_matrix.py
 gacha-sim-soft-pity    api.py ── core.py ── mc_matrix.py
